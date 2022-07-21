@@ -1,0 +1,116 @@
+
+
+
+/* online platform information */
+.info {
+    display: flex;
+    height: 30px;
+    /* background-color: orange; */
+}
+
+.info-link {
+    text-align: center;
+    font-size: 17px;
+}
+
+.info-link a {
+    text-decoration: none;
+    color: #000;
+    /* border-right: 2px #ddd solid; */
+    margin-right: 5%;
+}
+
+/* navbar division */
+
+.navbar-brand {
+    width: 80px;
+}
+.navbar-brand img {
+    width: 100%;
+    /* height: 80px; */
+}
+
+.navbar-nav {
+    margin-left: 60%;
+}
+
+.nav-link {
+    position: relative;
+    margin-left: 40px;
+    /* display: none; */
+    
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: silver;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: .4s;
+    /* margin: left -5px; */
+}
+
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* about */
+
+.about{
+    /* text-align: center; */
+    margin-top: 90px;
+}
+
+.about-items {
+    margin-top: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-info {
+    width: 110px;
+    margin-top: 50px;
+}
+
+.about-content-image {
+    width: 500px;
+}
+
+.about-content-image img {
+    width: 100%;
+}
+
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 60vh;
+    background-color: #141414!important;
+    margin-top: 90px;
+}
+
+.footer-flex {
+    color: #fdfdfd;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+.about , .contact {
+    margin-top: 90px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #fdfdfd;
+}
+
+.copy-right {
+    text-align: center;
+    color: #d0d0d0;
+    margin-top: 50px;
+}

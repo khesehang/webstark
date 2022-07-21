@@ -1,0 +1,341 @@
+
+/* online platform information */
+.info {
+    display: flex;
+    height: 30px;
+    /* background-color: orange; */
+}
+
+.info-link {
+    text-align: center;
+    font-size: 17px;
+}
+
+.info-link a {
+    text-decoration: none;
+    color: #000;
+    /* border-right: 2px #ddd solid; */
+    margin-right: 5%;
+}
+
+/* navbar division */
+
+.navbar-brand img {
+    width: 100%;
+    height: 80px;
+}
+
+.navbar-nav {
+    margin-left: 60%;
+}
+
+.nav-link {
+    position: relative;
+    margin-left: 40px;
+    
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    background-color: silver;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -3px;
+    transition: .4s;
+    /* margin: left -5px; */
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* home sliderbar division */
+
+.home-sliderbar {
+    width: 100%;
+    height: 85vh;
+    /* position: relative; */
+    /* overflow: hidden; */
+}
+
+.home-bar {
+    width: 100%;
+    height: 85vh;
+    background-color: #000;
+    margin-top: -85vh;
+    z-index: 100% !important;
+    opacity: .3;
+    position: absolute;
+}
+
+.carousel-slider {
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 85vh;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 85vh;
+}
+
+.carousel-inner-content {
+    text-align: center;
+    width: 190px;
+    height: 150px;
+    position: absolute;
+    z-index: 999 !important;
+
+}
+
+
+.homebar-content {
+    position: absolute;
+    width: 500px;
+    height: auto;
+    text-align: center;
+    margin-top: 130px;
+}
+
+
+/* our service */
+
+.our-service {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.item-icon {
+    background-color:#000;
+    color: #000;
+}
+
+.service-items  {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.service-item{
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: none;
+    border: none;
+}
+
+.service-contact-botton {
+    width: 60px;
+    margin-top: 60px;
+}
+
+
+.feature {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin-top: 90px;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-card {
+    width: 100%;
+    display: flex;
+}
+
+.feature-card-body:hover {
+    width: 80%;
+    border-radius: 10px;
+    height: 70px;
+    background-color: rgb(250, 249, 247);
+    box-shadow: 7px 7px 25px;
+    transition: .9s;
+    overflow: hidden;
+}
+
+.card-title, .card-text {
+    text-align:left;
+    z-index: 999 !important;
+}
+
+
+/* our online support */
+
+
+.support {
+    width: 100%;
+    padding: 0;
+    height: auto;
+    margin-top: 90px;
+    align-items: center;
+    text-align: center;
+}
+
+.support-card {
+    width: 100%;
+    display: flex;
+    /* margin-left: 50px; */
+}
+
+.icon-image {
+    width: 25px;
+}
+
+.card-title, .card-text {
+    text-align:left;
+    z-index: 999 !important;
+}
+
+
+/* <!-- website packages --> */
+
+.packages {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+}
+
+.package-card {
+    display: flex;
+    /* justify-content: space-around; */
+}
+
+.package-image {
+    width: 500px;
+    height: 350px;
+}
+
+.package-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* footer */
+.footer {
+    width: 100%;
+    height: 60vh;
+    background-color: #141414!important;
+    margin-top: 90px;
+}
+
+.footer-flex {
+    color: #fdfdfd;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+.about , .contact {
+    margin-top: 90px;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #fdfdfd;
+}
+
+.copy-right {
+    text-align: center;
+    color: #d0d0d0;
+    margin-top: 50px;
+}
+
+/* up to TOP scrool Button */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    .service-items {
+      display: inline;
+      align-items: center;
+      text-align: center;
+      margin-left: 10%;
+
+    }
+    .service-item{
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .support-card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .feature-card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+    .package-card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+    
+    .footer {
+        width: 100%;
+        height: auto;
+        bottom: 0;
+    }
+    
+    .footer-flex {
+        color: #fdfdfd;
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        text-align: center;
+        flex-wrap: wrap;
+
+    }
+  }
