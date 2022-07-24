@@ -15,11 +15,21 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="/components/contact.component.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/img/logo.jpg">
 
-    <title>Hello, world!</title>
+
+    <title>webstark</title>
   </head>
   <body>
+
+    <!-- powered by -->
+    <div class="powered-by" style="position:fixed;width:auto;left:85%;font-family: poppins;padding:0;top: 350px;color:#000" >
+      <p>
+      Powered by <span style="color:lightseagreen;font-weight: 600;">WebStark</span>
+    </p>
+  </div>
     <!-- here will be all the details regarding online platform -->
     <div class="info">
         <!-- email -->
@@ -83,12 +93,16 @@
       </nav>
       <!-- contact -->
       <div class="container email-contact-form" >
+        <div data-aos="fade" data-aos-duration="300">
           <h1>CONTACT</h1>
-          <div class="card contact-card">
-            <div class="card-body contact-form">
+        </div>
+        <div class="card contact-card">
+          <div data-aos="fade-up">
+          <div class="card-body contact-form">
                 <div class="col-md-8 mail-form" >
                     <h3>SEND US A MESSAGE </h3>
-                    <form  >
+                    <form   style="display:flex;flex-direction:column">
+                      <div >
                         <div class="mail-form-items" >
                         <div class="col-md-6 form-mail-items" >
                             <div class="mb-3 col-md-6 form-mail-item">
@@ -101,12 +115,16 @@
                         </div>
                         <div class="col-md-6 form-mail-items" >
                             <div class="mb-3 col-md-6 form-mail-item">
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="emial">
+                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email">
                             </div>
                             <div class="mb-3 col-md-6 form-mail-item">
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password">
                             </div>
                               
+                        </div>
+                      </div>
+                        <div class="mb-3">
+                          <textarea  name="description" class="form-control" placeholder="Let us know what you are after and we will give you a call" id="input_description"rows="10" cols="50" ></textarea>
                         </div>
                     </div>
 
@@ -138,29 +156,38 @@
                 </div>
             </div>
           </div>
+        </div>
       </div>
 
          <!-- footer -->
     <footer class="footer" >
         <div class="footer-flex" >
+          <div data-aos="fade-right">
             <div class="about">
                 <h3>About Us</h3>
                 <p>Web Stark designs and develops<br /> professional custom websites for<br /> small businesses, startups and <br />creative minds. Ask us about web<br /> hosting, SEO and digital<br /> marketing.</p>
             </div>
+            </div>
+            <div data-aos="fade-left">
             <div class="contact">
                 <h3>Contact Us</h3>
-                <h4>Phone</h4>
+                <h5>Phone</h5>
                 <a href="tel:9849992104" >9849992104</a>
-                <h4>Email</h4>
+                <h5>Email</h5>
                 <a href="mailto:webstark001@gmail.com" >webstark001@gmail.com</a>
+            </div>
             </div>
         </div>
         <div class="copy-right" >
-            <span>CopyRight <i class="fa-solid fa-copyright"></i> Web Stark 2022. Designed & Developed by <span style="color: white;"> Web Stark.</span></p>
-        </div>
+          CopyRight <i class="fa-solid fa-copyright"></i> Web Stark 2022. Designed & Developed by <span style="color: white;font-size: 19px;"> Web Stark.</span></p>
+      </div>
     </footer>
   
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

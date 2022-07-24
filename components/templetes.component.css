@@ -1,4 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');/* home-h1-content*/
 
+:root {
+    --home-content: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h2, h3 , h5 {
+    font-family: var(--home-content);
+    text-transform: uppercase;
+}
 
 
 /* online platform information */

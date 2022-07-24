@@ -15,11 +15,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="/components/about.component.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="/img/logo.jpg">
 
-    <title>Hello, world!</title>
+    <title>webstark</title>
   </head>
   <body>
+    <div class="powered-by" style="position:fixed;width:auto;left:85%;font-family: poppins;padding:0;top: 350px;color:#000" >
+      <p>
+      Powered by <span style="color:lightseagreen;font-weight: 600;">WebStark</span>
+    </p>
+  </div>
     <!-- here will be all the details regarding online platform -->
     <div class="info">
         <!-- email -->
@@ -83,13 +90,18 @@
       </nav>
       <!-- about -->
       <div class="container about">
+        <div data-aos="fade">
         <h1 style="text-align: center">About</h1>
+        </div>
         <div class="about-items" >
+          <div data-aos="fade-right">
           <div class="col-md-6 about-content-image" >
             <img src="https://www.webstark.com.au/wp-content/uploads/2021/09/1.-About-Web-Stark-Desktop-Transparent.png" alt="contact" />
         </div>
-            <div class="col-md-6 about-content" >
-               <p> Web Stark is an Australian based business. We design and<br /> develop professional custom websites for small businesses,<br /> startups and creative minds worldwide. </br></p>
+        </div>
+        <div class="col-md-6 about-content" >
+              <div data-aos="fade-left">
+               <p> Web Stark is an Nepal based business. We design and<br /> develop professional custom websites for small businesses,<br /> startups and creative minds worldwide. </br></p>
                 <p>
                 We pride ourselves on our creativity and ability to create the<br/> best modern and functional websites using the latest high-end<br /> technnology. No job is too big or too small.</p>
                     <p>
@@ -99,30 +111,39 @@
                     <a href="/" class="btn btn-info" >Contact</a>
                 </div>
             </div>
-            
+            </div>            
         </div>
       </div>
 
          <!-- footer -->
     <footer class="footer" >
         <div class="footer-flex" >
+          <div data-aos="fade-right">
             <div class="about">
                 <h3>About Us</h3>
                 <p>Web Stark designs and develops<br /> professional custom websites for<br /> small businesses, startups and <br />creative minds. Ask us about web<br /> hosting, SEO and digital<br /> marketing.</p>
             </div>
+            </div>
+            <div data-aos="fade-left">
             <div class="contact">
                 <h3>Contact Us</h3>
-                <h4>Phone</h4>
+                <h5>Phone</h5>
                 <a href="tel:9849992104" >9849992104</a>
-                <h4>Email</h4>
+                <h5>Email</h5>
                 <a href="mailto:webstark001@gmail.com" >webstark001@gmail.com</a>
+            </div>
             </div>
         </div>
         <div class="copy-right" >
-            <span>CopyRight <i class="fa-solid fa-copyright"></i> Web Stark 2022. Designed & Developed by <span style="color: white;"> Web Stark.</span></p>
-        </div>
+          CopyRight <i class="fa-solid fa-copyright"></i> Web Stark 2022. Designed & Developed by <span style="color: white;font-size: 19px;"> Web Stark.</span></p>
+      </div>
     </footer>
   
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 

@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');/* home-h1-content*/
 
+:root {
+    --home-content: 'Poppins', sans-serif;
+    --p-message-font: 'Italianno', cursive;
+}
 
+h1 {
+    text-transform: uppercase;
+}
+h1 , h3 , h5 {
+    font-family: var(--home-content);
+}
 
 /* online platform information */
 .info {
@@ -37,7 +48,10 @@
 .nav-link {
     position: relative;
     margin-left: 40px;
+    font-family: var(--home-content);
     /* display: none; */
+    text-transform: uppercase;
+
     
 }
 
@@ -144,6 +158,8 @@
     .about-items {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .about-content-image {
